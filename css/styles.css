@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "League Spartan";
+  src: url(../fonts/LeagueSpartan-VariableFont_wght.ttf) format("truetype"); /* 400 500 700 */
+}
+
+:root {
+  /* ### Primary */
+
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+
+  /* ### Neutral */
+
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  font-size: 15px;
+  background-color: var(--white);
+  background-image: url(../images/bg-pattern-bottom-mobile.svg),
+    url(../images/bg-pattern-top-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right, top left;
+  background-size: 100%, 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  max-width: 370px;
+  margin: 2rem 0 1rem 0;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.social__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.social__title {
+  font-size: 2.5rem;
+  color: var(--very-dark-magenta);
+  text-align: center;
+  line-height: 0.9;
+  font-weight: 700;
+}
+
+.social__description {
+  font-size: 1.2rem;
+  color: var(--dark-grayish-magenta);
+  text-align: center;
+}
+
+.social__rated {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.social__rate__box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  background-color: var(--light-grayish-magenta);
+  border-radius: 10px;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.social__rate__text {
+  font-size: 1.1rem;
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.review__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.7rem;
+  background-color: var(--very-dark-magenta);
+  border-radius: 10px;
+  color: var(--white);
+}
+
+.review__header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.review__header > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.review__buyer {
+  display: flex;
+  flex-direction: column;
+  /* gap: 0.5rem; */
+  font-weight: 700;
+}
+
+.review__verified {
+  color: var(--soft-pink);
+}
